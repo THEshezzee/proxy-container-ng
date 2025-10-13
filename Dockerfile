@@ -1,6 +1,6 @@
 FROM docker.io/rapiz1/rathole:latest AS rathole
 
-FROM golang:latest AS sing_box
+FROM golang:alpine AS sing_box
 
 ENV CGO_ENABLED=0
 WORKDIR /go
